@@ -2,6 +2,6 @@ service:
   port: 80
 
 ingress:
-  enabled: false
+  enabled: true
   hosts:
   - docker-registry{{ .Values.jxRequirements.ingress.namespaceSubDomain }}{{ .Values.jxRequirements.ingress.domain | default "cluster.local" }}
